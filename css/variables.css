@@ -1,12 +1,12 @@
 :root {
     --color-primary: #8d99ae;
     --color-bg: #e9ecef;
-    --color-text: #0f084b;
+    --color-text: #094b08;
     --color-text-muted: #29274c;
     --color-text-white: #fffff2;
     --color-bg-link: #6f84a7;
 
-    --font-heading: "CabinetGrotesk_Complete", sans-serif;
+    --font-heading: "Chillax_Complete", sans-serif;
     --font-body: "Author_Complete", serif;
 
     --spacing-xs: 0.5rem;
