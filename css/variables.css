@@ -1,0 +1,22 @@
+:root {
+    --color-primary: #8d99ae;
+    --color-bg: #e9ecef;
+    --color-text: #0f084b;
+    --color-text-muted: #29274c;
+    --color-text-white: #fffff2;
+    --color-bg-link: #6f84a7;
+
+    --font-heading: "CabinetGrotesk_Complete", sans-serif;
+    --font-body: "Author_Complete", serif;
+
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+
+    --text-sm: 0.875rem;
+    --text-md: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.80rem;
+    --text-hero: 7rem;
+}
