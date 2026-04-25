@@ -1,5 +1,6 @@
 body {
     background-color: var(--color-bg);
+    padding-top: 70px;
 }
 
 header {
@@ -15,7 +16,18 @@ header {
     width: 100%;
     justify-content: space-between;
     padding: var(--spacing-sm);
-    background-color: var(--color-primary);
+    position: fixed;        
+    top: 0;                 
+    left: 0;                         
+    z-index: 1000;          
+    background-color: transparent; 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background-color 0.9s ease;
+}
+
+.my-nav.scrolled {
+    background-color: var(--color-bg-link);
 }
 
 .nav-links {
@@ -50,7 +62,7 @@ a:hover {
 .nav-brand {
     display: flex;
     align-items: center;
-    gap: var(--spacing-sm)
+    gap: var(--spacing-sm);
 }
 
 .logo {
