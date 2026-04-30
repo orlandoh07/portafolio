@@ -1,6 +1,5 @@
 body {
     background-color: var(--color-bg);
-    padding-top: 70px;
 }
 
 header {
@@ -9,6 +8,8 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding-top: 82px;
+    box-sizing: border-box;
 }
 
 .my-nav {
@@ -122,6 +123,11 @@ p {
     margin: 0 auto; /* quita el margen vertical y entra el contenido en horizontal */
     padding: var(--spacing-md);
     background-color: var(--color-bg-link);
+    border-radius: var(--border-md);
+}
+
+.card-section {
+    background-color: #a5b5d1;
     border-radius: var(--border-md);
 }
 
