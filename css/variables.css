@@ -1,24 +1,26 @@
 :root {
-    --color-primary: #8d99ae;
-    --color-bg: #e9ecef;
-    --color-text: #094b08;
-    --color-text-muted: #29274c;
-    --color-text-white: #fffff2;
-    --color-bg-link: #6f84a7;
+    --color-primary: #8d99ae; /* color de acento que va en botones y detalles */
+    --color-bg: #e9ecef; /* fondo de la pagina */
+    --color-text: #094b08; /* texto principal */
+    --color-text-muted: #29274c; /* texto secundario, subtitulos */
+    --color-text-white: #fffff2; /* texto para contraste de botones */
+    --color-bg-link: #6f84a7; /* color de los links */
+    --color-sections: #a5b5d1; /* color de las secciones */
     
-    --font-heading: "Chillax_Complete", sans-serif;
-    --font-body: "Author_Complete", serif;
+    --font-heading: "Chillax_Complete", sans-serif; /* para titulos */
+    --font-body: "Author_Complete", serif; /* para texto corrido */
 
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
+    --spacing-xxl: 6rem;
 
     --text-sm: 0.875rem;
     --text-md: 1rem;
     --text-lg: 1.25rem;
     --text-xl: 1.80rem;
-    --text-xxl: 2.25rem;
+    --text-xxl: 3.25rem;
     --text-hero: 7rem;
 
     --border-sm: 1rem;

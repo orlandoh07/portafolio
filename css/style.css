@@ -52,15 +52,14 @@ h2 {
     padding-right: var(--spacing-md);
 }
 
-a {
+.nav-links a {
     color: var(--color-text);
     font-family: var(--font-body);
     text-decoration: none;
 }
 
-a:hover {
-    background-color: var(--color-bg-link);
-    border-radius: 5px;
+.nav-links a:hover {
+    text-decoration: underline;
 }
 
 .projects-link {
@@ -108,6 +107,7 @@ p {
     color: var(--color-text-muted);
     font-family: var(--font-body);
     font-size: var(--text-xl);
+    font-weight: 400;
 }
 
 .hero-text h1 {
@@ -124,6 +124,17 @@ p {
     gap: var(--spacing-md);
 }
 
+.hero-text a {
+    color: var(--color-text);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.hero-text a:hover {
+    text-decoration: none;
+}
+
+/* sobre mi */
 .container {
     width: 100%; /* todo el ancho */
     max-width: 1000px; /* maximo de pixeles a extenderse */
@@ -134,16 +145,24 @@ p {
 }
 
 .card-section-about-me {
-    background-color: #a5b5d1;
+    background-color: var(--color-sections);
     border-radius: var(--border-md);
+    max-width: 1000px; /* maximo de pixeles a extenderse */
 }
 
 #about-me {
+    min-height: 100vh;
     background-color: var(--color-bg);
     padding: var(--spacing-lg) 0; /*arriba y a los lados*/
+    display: felx;
+    align-items: center;
 }
 
 #about-me h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-xxl);
+    font-weight: 600;
+    color: var(--color-text);
     margin: 0 0 var(--spacing-md) var(--spacing-sm);
 }
 
@@ -155,15 +174,36 @@ p {
     max-width: 65ch; /* maximo 65 caracteres a lo ancho */
     text-align: justify;
     margin: 0 auto; /* centra el parrafo */
+    padding: var(--spacing-sm); /* espaciado horizontal para pantallas pequenas */
+}
+
+#projects {
+    min-height: 100vh;
+    background-color: var(--color-bg);
+    padding: var(--spacing-xxl) 0; /* arriba y a los lados */
+    display: flex;
+    align-items: center;
 }
 
 .card-section-project {
-    background-color: #6f84a7;
+    background-color: var(--color-sections);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
 }
+
+.card-section-project h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-xxl);
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 var(--spacing-md) var(--spacing-sm);
+}
+
 /* grid para las cards */
 .projects-grid {
-    display: flex;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: var(--spacing-md)
 }
 
@@ -177,25 +217,86 @@ p {
     background-color: var(--color-bg);
 }
 
-#projects p {
+/* #projects p {
     font-size: var(--text-lg);
+} */
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    font-family: var(--font-body);
 }
 
-#skills {
-  padding: var(--spacing-lg) 0;
+.card-body h3 {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0;
 }
+
+.card-body p {
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.card-body a {
+    color: var(--color-text);
+    font-weight: 500;
+    align-self: flex-start;
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+}
+
+.card-tags {
+    margin-bottom: var(--spacing-xs);
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+/* seccion de skills */
+#skills {
+    min-height: 100vh;
+    padding: var(--spacing-lg) 0;
+    display: flex;
+    align-items: center;
+}
+
+.card-section-skills {
+    background-color: var(--color-sections);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+}
+
+.card-section-skills h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-xxl);
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 var(--spacing-md) var(--spacing-sm);
+}
+
 
 .skills-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
-  margin-top: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
 }
 
 .skill-item {
-  background-color: var(--color-primary);
-  border-radius: var(--border-md);
-  overflow: hidden;
+    background-color: var(--color-primary);
+    border-radius: var(--border-md);
+    overflow: hidden;
 }
 
 .skill-header {
