@@ -146,7 +146,7 @@ p {
     text-decoration: underline;
 }
 
-/* sobre mi */
+/* seccion sobre mi */
 .container {
     width: 100%; /* todo el ancho */
     max-width: 1000px; /* maximo de pixeles a extenderse */
@@ -189,19 +189,24 @@ p {
     padding: var(--spacing-sm); /* espaciado horizontal para pantallas pequenas */
 }
 
+/* seccion de proyectos */
 #projects {
+    scroll-margin-top: 120px;
     min-height: 100vh;
     background-color: var(--color-bg);
-    padding: var(--spacing-xxl) 0 0 0; /* arriba y a los lados */
+    padding: var(--spacing-xxl) 0; /* arriba y a los lados */
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .card-section-project {
     background-color: var(--color-sections);
+    width: 100%;
     max-width: 1400px;
     margin: 0 auto;
     padding: var(--spacing-lg);
+    border-radius: var(--border-md);
 }
 
 .card-section-project h2 {
@@ -278,17 +283,21 @@ p {
 
 /* seccion de skills */
 #skills {
+    scroll-margin-top: 100px;
     min-height: 100vh;
-    padding: var(--spacing-xxl) 0 0 0; /* arriba y a los lados */
+    padding: var(--spacing-xxl) 0; /* arriba y a los lados */
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .card-section-skills {
     background-color: var(--color-sections);
+    width: 100%;
     max-width: 1400px;
     margin: 0 auto;
     padding: var(--spacing-lg);
+    border-radius: var(--border-md);
 }
 
 .card-section-skills h2 {
@@ -366,18 +375,21 @@ p {
 }
 
 /* contacto */
-
 #contact {
     min-height: 100vh;
     padding: var(--spacing-xxl) 0 var(--spacing-xxl) 0;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .card-section-contact {
     background-color: var(--color-sections);
+    width: 100%;
     max-width: 800px;
+    margin: 0 auto;
     padding: var(--spacing-lg);
+    border-radius: var(--border-md);
 }
 
 .card-section-contact h2 {
