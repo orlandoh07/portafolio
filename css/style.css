@@ -94,7 +94,7 @@ body {
 
 @keyframes hero-fade {
     0% {
-        transform: translate(8%);
+        transform: translateY(8%);
         opacity: 0;
         filter: blur(4px);
     }
@@ -142,7 +142,7 @@ body {
         }
         100% {
             transform: translateX(0);
-            opacity: ;
+            opacity: 1;
             filter: blur(0);
         }
     }
