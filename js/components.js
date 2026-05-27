@@ -1,29 +1,9 @@
 // animacion de la barra de navegacion 
-
-const navbar = document.querySelector('.my-nav');
+const navbar = document.querySelector('.navbar');
         window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            navbar.classList.remove('scrolled');
-        } else {
             navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
         }
         });
-
-//animacion de la lista de skills
-const skillHeaders = document.querySelectorAll('.skill-header');
-let skillActivo = null;
-for (const header of skillHeaders) {
-    header.addEventListener('click', () => {
-        const skillItem = header.parentElement;
-        if (skillActivo !== null) {
-            skillActivo.classList.remove('activo');
-        }
-        if (skillActivo === skillItem) {
-            skillActivo = null;
-        }
-        else {
-            skillItem.classList.add('activo');
-            skillActivo = skillItem;
-        }
-    });
-}

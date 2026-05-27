@@ -10,99 +10,119 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+        <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="navbar__brand">
+            <img src="./assets/img/scorpions-logo.png" alt="Orlando Herrera" class="navbar__pfp">
+            <span class="navbar__logo">Orlando Herrrera</span>
+        </div>
+        <ul class="navbar__links">
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
     <header>
-        <!--barra de navegacion-->
-        <nav class="my-nav">
-            <div class="nav-brand">
-                <img src="./assets/img/scorpions-logo.png" alt="Orlando Herrera" class="img-logo">
-                <span class="logo">Orlando Herrera</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about-me">Sobre Mi</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-        <!-- hero -->
+        <!-- Hero -->
         <div class="hero">
-            <div class="hero-text">
-                <h1>Orlando Herrera</h1>
-                <p>Estudiante de Analisis de Sistemas - Desarrollo Web</p>
-                <a href="#projects" class="projects-link">Ver proyectos</a>
-            </div>
-            <div class="hero-img">
-                <img src="./assets/img/scorpions-logo.png" alt="Orlando Herrera" class="img-pfp">
+            <div class="hero__wrapper">
+                <img src="./assets/img/scorpions-logo.png" alt="Orlando Herrera" class="hero__pfp">
+                <div class="hero__content">
+                    <h1 class="hero__title">Orlando Herrera</h1>
+                    <p class="hero__subtitle">Estudiante de Análisis de Sistemas · Desarrollo Web</p>
+                    <div class="hero__links">
+                        <a href="#projects" class="hero__link">Ver proyectos</a>
+                        <a href="#contact" class="hero__link">Contactar</a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="about-me">
-            <div class="container card-section-about-me">
-                <h2>Sobre mi</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat quo, architecto repudiandae officia repellat? Optio, qui fugit? Eos voluptatem ut labore pariatur nulla delectus, eius deserunt fugit quod perferendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam unde pariatur magnam perspiciatis! Eum, autem amet nobis praesentium laboriosam quo vel explicabo. Debitis aliquam voluptatem eaque quo cumque, unde optio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat accusamus odit reprehenderit minima molestiae. Cupiditate mollitia omnis reprehenderit maiores id doloribus quibusdam praesentium similique minima, ab unde facilis possimus nobis!</p>
+        <section id="about" class="about">
+            <div class="about__wrapper">
+                <p class="about__title">Construyo interfaces<br>que la gente disfruta usar.</p>
+                <div class="about__body">
+                    <p class="about__text">Soy Orlando Herrera, estudiante de Análisis de Sistemas y desarrollador frontend autodidacta. Me especializo en construir interfaces limpias y bien pensadas.</p>
+                    <p class="about__text">Aprendo haciendo. Cada proyecto que construyo tiene un propósito real: entender más profundo, resolver mejor, y acercarme a escribir código del que me sienta orgulloso.</p>
+                    <p class="about__text">Mi objetivo es claro: conseguir mi primer rol como frontend developer en una empresa, crecer ahí, y con el tiempo trabajar de forma independiente.</p>
+                </div>
             </div>
         </section>
 
-        <section id="projects">
-            <div class="container card-section-project">
-                <h2>Proyectos</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="/assets/img/scorpions-logo.png" alt="Proyceto 1">
-                        <div class="card-body">
-                            <h3>Proyecto 1</h3>
-                            <p>Descripcion corta del problema que resuelve</p>
-                            <ul class="card-tags">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
+        <section id="projects" class="projects">
+            <div class="projects__content">
+                <h2 class="projects__title">Proyectos</h2>
+                <div class="projects__grid">
+
+                <div class="project-card">
+                        <img src="./assets/img/scorpions-logo.png" alt="Proyecto 1" class="project-card__img">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Proyecto 1</h3>
+                            <p class="project-card__desc">Descripción corta del problema que resuelve</p>
+                            <ul class="project-card__tags">
+                                <li class="project-card__tag">HTML</li>
+                                <li class="project-card__tag">CSS</li>
+                                <li class="project-card__tag">JavaScript</li>
                             </ul>
-                            <a href="#">Ver proyecto</a>
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link">Ver proyecto</a>
+                                <a href="#" class="project-card__link project-card__link--github">GitHub</a>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- se repite un project-card por proyecto  -->
-                     <div class="project-card">
-                        <img src="/assets/img/scorpions-logo.png" alt="Proyceto 1">
-                        <div class="card-body">
-                            <h3>Proyecto 2</h3>
-                            <p>Descripcion corta del problema que resuelve</p>
-                            <ul class="card-tags">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                            </ul>
-                            <a href="#">Ver proyecto</a>
-                        </div>
-                    </div>
-
+                    <!-- Se repite un project-card por proyecto-->
                     <div class="project-card">
-                        <img src="/assets/img/scorpions-logo.png" alt="Proyceto 1">
-                        <div class="card-body">
-                            <h3>Proyecto 3</h3>
-                            <p>Descripcion corta del problema que resuelve</p>
-                            <ul class="card-tags">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
+                        <img src="./assets/img/scorpions-logo.png" alt="Proyecto 2" class="project-card__img">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Proyecto 2</h3>
+                            <p class="project-card__desc">Descripción corta del problema que resuelve</p>
+                            <ul class="project-card__tags">
+                                <li class="project-card__tag">HTML</li>
+                                <li class="project-card__tag">CSS</li>
+                                <li class="project-card__tag">JavaScript</li>
                             </ul>
-                            <a href="#">Ver proyecto</a>
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link">Ver proyecto</a>
+                                <a href="#" class="project-card__link project-card__link--github">GitHub</a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="project-card">
-                        <img src="/assets/img/scorpions-logo.png" alt="Proyceto 1">
-                        <div class="card-body">
-                            <h3>Proyecto 4</h3>
-                            <p>Descripcion corta del problema que resuelve</p>
-                            <ul class="card-tags">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
+                        <img src="./assets/img/scorpions-logo.png" alt="Proyecto 3" class="project-card__img">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Proyecto 3</h3>
+                            <p class="project-card__desc">Descripción corta del problema que resuelve</p>
+                            <ul class="project-card__tags">
+                                <li class="project-card__tag">HTML</li>
+                                <li class="project-card__tag">CSS</li>
+                                <li class="project-card__tag">JavaScript</li>
                             </ul>
-                            <a href="#">Ver proyecto</a>
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link">Ver proyecto</a>
+                                <a href="#" class="project-card__link project-card__link--github">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./assets/img/scorpions-logo.png" alt="Proyecto 4" class="project-card__img">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Proyecto 4</h3>
+                            <p class="project-card__desc">Descripción corta del problema que resuelve</p>
+                            <ul class="project-card__tags">
+                                <li class="project-card__tag">HTML</li>
+                                <li class="project-card__tag">CSS</li>
+                                <li class="project-card__tag">JavaScript</li>
+                            </ul>
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link">Ver proyecto</a>
+                                <a href="#" class="project-card__link project-card__link--github">GitHub</a>
+                            </div>
                         </div>
                     </div>
 
@@ -110,78 +130,72 @@
             </div>
         </section>
 
-        <section id="skills">
-            <div class="container card-section-skills">
-                <h2>Skills</h2>
-                <div class="skills-list">
-                    <!--se repite uno por cada skill-->
-                    <div class="skill-item">
-                        <button class="skill-header">
-                            <span>Python</span>
-                            <span class="skill-arrow">▼</span>
-                        </button>
-                        <div class="skill-body">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem reprehenderit, soluta repellendus eveniet tempore deleniti! Laudantium, rerum. Maxime nesciunt fuga earum necessitatibus ab ullam sequi voluptas dolore provident quas! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni dignissimos nesciunt eaque cupiditate omnis assumenda unde expedita fugit sed quis illo voluptas hic quam, ullam ducimus. Facilis a minima provident!</p>
+        <section id="skills" class="skills">
+            <div class="skills__content">
+                <h2 class="skills__title">Skills</h2>
+                <div class="skills__grid">
+
+                    <div class="skill-card" data-skill="html">
+                        <div class="skill-card__icon">
+                            <img src="./assets/icons/html.svg" alt="" aria-hidden="true">
                         </div>
+                        <span class="skill-card__name">HTML</span>
                     </div>
 
-                    <div class="skill-item">
-                        <button class="skill-header">
-                            <span>JavaScript</span>
-                            <span class="skill-arrow">▼</span>
-                        </button>
-                        <div class="skill-body">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem reprehenderit, soluta repellendus eveniet tempore deleniti! Laudantium, rerum. Maxime nesciunt fuga earum necessitatibus ab ullam sequi voluptas dolore provident quas! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni dignissimos nesciunt eaque cupiditate omnis assumenda unde expedita fugit sed quis illo voluptas hic quam, ullam ducimus. Facilis a minima provident!</p>
+                    <div class="skill-card" data-skill="css">
+                        <div class="skill-card__icon">
+                            <img src="./assets/icons/css.svg" alt="" aria-hidden="true">
                         </div>
-                    </div>  
-
-                    <div class="skill-item">
-                        <button class="skill-header">
-                            <span>C++</span>
-                            <span class="skill-arrow">▼</span>
-                        </button>
-                        <div class="skill-body">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem reprehenderit, soluta repellendus eveniet tempore deleniti! Laudantium, rerum. Maxime nesciunt fuga earum necessitatibus ab ullam sequi voluptas dolore provident quas! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni dignissimos nesciunt eaque cupiditate omnis assumenda unde expedita fugit sed quis illo voluptas hic quam, ullam ducimus. Facilis a minima provident!</p>
-                        </div>
+                        <span class="skill-card__name">CSS</span>
                     </div>
+
+                    <div class="skill-card" data-skill="git">
+                        <div class="skill-card__icon">
+                            <img src="./assets/icons/git.svg" alt="" aria-hidden="true">
+                        </div>
+                        <span class="skill-card__name">GIT</span>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-            <div class="container card-section-contact">
-                <h2>Contacto</h2>
-                <p>¿Tienes un proyecto en mente o quieres colaborar? Escríbeme.</p>
-                <form class="contact-form" action="https://formspree.io/f/mvzlnzad" method="POST">
-                    <div class="form-group">
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo</label>
-                        <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tu mensaje aquí..." required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Enviar mensaje</button>
-                </form>
+        <section id="contact" class="contact">
+            <div class="contact__content">
+                <h2 class="contact__title">Contacto</h2>
+                <p class="contact__desc">¿Tienes un proyecto en mente o quieres colaborar? Escríbeme.</p>
+                <div class="contact__form-wrapper">
+                    <form class="contact__form" action="https://formspree.io/f/meenllgg" method="POST">
+                        <div class="contact__form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" class="contact__input" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="contact__form-group">
+                            <label for="email">Correo</label>
+                            <input type="email" id="email" class="contact__input" name="email" placeholder="tu@correo.com" required>
+                        </div>
+                        <div class="contact__form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" class="contact__input contact__textarea" name="message" rows="5" placeholder="Tu mensaje aquí..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Enviar mensaje</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="my-footer">
-        <div class="footer-content">
-            <span class="footer-name">Orlando Herrera</span>
-            <div class="footer-links">
-                <a href="#" target="_blank">Gtihub</a>
+    <footer class="footer">
+        <div class="footer__content">
+            <span class="footer__logo">Orlando Herrera</span>
+            <div class="footer__links">
+                <a href="#" target="_blank">GitHub</a>
                 <a href="#" target="_blank">LinkedIn</a>
             </div>
-            <span class="footer-copy">© 2026 Orlando Herrera</span>
+            <span class="footer__copy">© 2026 Orlando Herrera</span>
         </div>
     </footer>
-    
+
     <script src="./js/components.js"></script>
 </body>
 </html>

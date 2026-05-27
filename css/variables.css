@@ -1,11 +1,14 @@
 :root {
     --color-primary: #8d99ae; /* color de acento que va en botones y detalles */
     --color-bg: #e9ecef; /* fondo de la pagina */
+    --color-bg-alt: #7793c4; /* fondo de las secciones o tarjetas */
+    --color-navbar: #3b5748ca; /* fondo de la barra de navegacion */
     --color-text: #094b08; /* texto principal */
     --color-text-muted: #29274c; /* texto secundario, subtitulos */
     --color-text-white: #fffff2; /* texto para contraste de botones */
     --color-bg-link: #6f84a7; /* color de los links */
     --color-sections: #a5b5d1; /* color de las secciones */
+    --color-text-cards: #232155; /* texto para contraste de botones */
     
     --font-heading: "Chillax_Complete", sans-serif; /* para titulos */
     --font-body: "Author_Complete", serif; /* para texto corrido */
@@ -14,7 +17,7 @@
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
-    --spacing-xxl: 6rem;
+    --spacing-xl: 6rem;
 
     --text-sm: 0.875rem;
     --text-md: 1rem;
