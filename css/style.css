@@ -336,13 +336,14 @@ body {
 
 .project-card__tags {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--spacing-md);
     list-style: none;
     padding-bottom: var(--spacing-sm);
 }
 
 .project-card__tag {
-    background-color: var(--color-bg-light);
+    background-color: var(--color-bg);
     color: var(--color-text);
     font-family: var(--font-body);
     font-size: clamp(0.75rem, 2vw, 0.875rem);
